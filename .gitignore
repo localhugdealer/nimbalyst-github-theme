@@ -3,3 +3,7 @@ dist/
 *.log
 .DS_Store
 Thumbs.db
+
+# Claude
+CLAUDE.md
+AGENTS.md
