@@ -8,8 +8,9 @@ by [@krios2146](https://github.com/krios2146).
 - **GitHub Dark** — GitHub's dark palette on a `#0d1117` background
 - **GitHub Dark Green** — the dark palette with a green `#258d32` accent instead of blue
 
-All three cover the full editor UI, code syntax colors, diff tints, blockquotes, tables,
-and the built-in terminal's 16-color ANSI palette.
+All three cover the full editor UI, the Monaco code editor (background, syntax tokens,
+gutter, selection, and diff colors), blockquotes, tables, and the built-in terminal's
+16-color ANSI palette.
 
 ## Install
 
@@ -58,7 +59,10 @@ headings, code, diffs, tables, and blockquotes under any of the three themes.
 
 ## Customizing
 
-Everything lives in [`manifest.json`](manifest.json) under `contributions.themes`.
+Everything lives in [`manifest.json`](manifest.json) under `contributions.themes`. Each
+theme has a `colors` map for the app chrome and a `monaco` block (`base`, `rules`,
+`colors`) for the code editor. Without the `monaco` block Nimbalyst falls back to VS
+Code's `vs-dark`, which is why code files would otherwise show a `#1e1e1e` background.
 Edit a color, restart Nimbalyst, and the change is live. The full set of supported
 color keys is broader than the SDK docs suggest and includes `code-*` syntax colors,
 `diff-*`, `table-*`, `toolbar-*`, and `terminal-*` entries; keys you omit are derived
