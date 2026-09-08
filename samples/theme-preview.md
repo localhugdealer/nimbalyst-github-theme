@@ -1,6 +1,6 @@
 # GitHub Theme preview
 
-This file exercises the surfaces the **GitHub Dark** and **GitHub Light** themes color.
+This file exercises the surfaces the **GitHub Light**, **GitHub Dark**, and **GitHub Dark Green** themes color.
 Switch themes in Settings > Appearance > Theme and compare against github.com.
 
 ## Text and links
@@ -14,6 +14,7 @@ Muted secondary text shows up in captions and metadata, and ==highlighted text==
 
 - [x] Ported the Primer dark palette
 - [x] Ported the Primer light palette
+- [x] Added a green-accent dark variant
 - [ ] Compare against github.com side by side
 
 1. First
@@ -40,13 +41,13 @@ export async function loadTheme(path: string): Promise<Theme> {
 
 ## Table
 
-| Token | Dark | Light |
-| --- | --- | --- |
-| bg | `#0d1117` | `#ffffff` |
-| text | `#c9d1d9` | `#24292f` |
-| primary | `#58a6ff` | `#0969da` |
-| success | `#7ee787` | `#0cb54f` |
-| error | `#f47067` | `#cf222e` |
+| Token | Light | Dark | Dark Green |
+| --- | --- | --- | --- |
+| bg | `#ffffff` | `#0d1117` | `#0d1117` |
+| text | `#24292f` | `#c9d1d9` | `#c9d1d9` |
+| primary | `#0969da` | `#58a6ff` | `#258d32` |
+| success | `#0cb54f` | `#7ee787` | `#7ee787` |
+| error | `#cf222e` | `#f47067` | `#f47067` |
 
 ---
 

@@ -1,13 +1,14 @@
 # GitHub Theme for Nimbalyst
 
-Two color themes that bring GitHub's look to [Nimbalyst](https://nimbalyst.com),
+Three color themes that bring GitHub's look to [Nimbalyst](https://nimbalyst.com),
 adapted from the [Obsidian GitHub Theme](https://github.com/krios2146/obsidian-theme-github)
 by [@krios2146](https://github.com/krios2146).
 
-- **GitHub Dark** — GitHub's dark palette on a `#0d1117` background
 - **GitHub Light** — GitHub's light palette on a white background
+- **GitHub Dark** — GitHub's dark palette on a `#0d1117` background
+- **GitHub Dark Green** — the dark palette with a green `#258d32` accent instead of blue
 
-Both cover the full editor UI, code syntax colors, diff tints, blockquotes, tables,
+All three cover the full editor UI, code syntax colors, diff tints, blockquotes, tables,
 and the built-in terminal's 16-color ANSI palette.
 
 ## Install
@@ -18,7 +19,7 @@ In Nimbalyst, open **Settings > Extensions**, find **Install from GitHub**, and 
 https://github.com/localhugdealer/nimbalyst-github-theme
 ```
 
-Then pick **GitHub Dark** or **GitHub Light** in **Settings > Appearance > Theme**.
+Then pick **GitHub Light**, **GitHub Dark**, or **GitHub Dark Green** in **Settings > Appearance > Theme**.
 
 Nimbalyst installs the latest release asset, or clones this repository if no release
 exists. There is nothing to build — this is a manifest-only extension.
@@ -37,22 +38,23 @@ exists. There is nothing to build — this is a manifest-only extension.
 
 ## Palette
 
-The accent is a custom green rather than GitHub's blue. Everything else follows Primer.
+GitHub Light and GitHub Dark follow GitHub's Primer colors. GitHub Dark Green is the
+same dark palette with the blue accent swapped for green.
 
-| Role | GitHub Dark | GitHub Light |
-| --- | --- | --- |
-| Background | `#0d1117` | `#ffffff` |
-| Secondary background | `#161b22` | `#f6f8fa` |
-| Text | `#c9d1d9` | `#24292f` |
-| Muted text | `#8b949e` | `#57606a` |
-| Border | `#30363d` | `#d0d7de` |
-| Accent / links | `#258d32` | `#258d32` |
-| Success | `#7ee787` | `#0cb54f` |
-| Warning | `#d29922` | `#bd8e37` |
-| Error | `#f47067` | `#cf222e` |
+| Role | GitHub Light | GitHub Dark | GitHub Dark Green |
+| --- | --- | --- | --- |
+| Background | `#ffffff` | `#0d1117` | `#0d1117` |
+| Secondary background | `#f6f8fa` | `#161b22` | `#161b22` |
+| Text | `#24292f` | `#c9d1d9` | `#c9d1d9` |
+| Muted text | `#57606a` | `#8b949e` | `#8b949e` |
+| Border | `#d0d7de` | `#30363d` | `#30363d` |
+| Accent / links | `#0969da` | `#58a6ff` | `#258d32` |
+| Success | `#0cb54f` | `#7ee787` | `#7ee787` |
+| Warning | `#bd8e37` | `#d29922` | `#d29922` |
+| Error | `#cf222e` | `#f47067` | `#f47067` |
 
 Open [`samples/theme-preview.md`](samples/theme-preview.md) in Nimbalyst to see
-headings, code, diffs, tables, and blockquotes under either theme.
+headings, code, diffs, tables, and blockquotes under any of the three themes.
 
 ## Customizing
 

@@ -4,7 +4,7 @@ This is a **Nimbalyst extension** project. Nimbalyst is an extensible, AI-native
 
 - **Extension ID**: `com.localhugdealer.github-theme`
 - **Type**: manifest-only theme extension (no JS entry point, nothing to build)
-- **Contributes**: two color themes (GitHub Dark, GitHub Light) via `contributions.themes`; no custom editors or file patterns
+- **Contributes**: three color themes (GitHub Light, GitHub Dark, GitHub Dark Green) via `contributions.themes`; no custom editors or file patterns
 
 ## Documentation
 
@@ -38,7 +38,7 @@ no build step, no `dist/`, and no npm dependencies. Editing colors means editing
 | Edit colors | Edit `contributions.themes[].colors` in `manifest.json` |
 | Apply changes | `mcp__nimbalyst-extension-dev__extension_reload` (needs Extension Dev Tools enabled in Settings > Advanced), otherwise restart Nimbalyst |
 | Check status | `mcp__nimbalyst-extension-dev__extension_get_status` with `extensionId: "com.localhugdealer.github-theme"` |
-| Switch theme | `mcp__nimbalyst-host__appearance_set_theme` with `com.localhugdealer.github-theme:github-dark` or `:github-light` |
+| Switch theme | `mcp__nimbalyst-host__appearance_set_theme` with `com.localhugdealer.github-theme:github-light`, `:github-dark`, or `:github-dark-green` |
 
 The full list of supported color keys is not in the SDK docs. Grep the app bundle for
 `"bg": "--nim-bg"` in `<Nimbalyst install dir>/resources/app.asar` to see the key-to-CSS-variable
@@ -53,7 +53,7 @@ It breaks silently if this folder is renamed or moved.
 ## Project Structure
 
 ```
-manifest.json           # The entire extension -- both themes under contributions.themes
+manifest.json           # The entire extension -- all three themes under contributions.themes
 README.md               # Install instructions and palette table
 LICENSE                 # MIT, with attribution to the upstream Obsidian theme
 samples/
